@@ -1,7 +1,7 @@
 package se.kry.codetest.domain.enumeration;
 
 public enum ServiceStatus {
-    UP,
-    DOWN,
+    OK,
+    FAIL,
     UNKNOWN
 }

@@ -20,9 +20,9 @@ public class BackgroundPoller {
         client.getAbs(service.getUrl())
                 .send(response -> {
                     if (response.succeeded()) {
-                        statusConsumer.accept(ServiceStatus.UP);
+                        statusConsumer.accept(ServiceStatus.OK);
                     } else {
-                        statusConsumer.accept(ServiceStatus.DOWN);
+                        statusConsumer.accept(ServiceStatus.FAIL);
                     }
                 });
     }
